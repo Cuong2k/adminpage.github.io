@@ -5,6 +5,16 @@
     .btn-show {
         display: inline-block;
     }
+    .box-logo {
+        padding-top: 0px !important;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    #slide-bar-hide {
+        display: none;
+    }
+    
 }
 
 @media screen and (max-width: 577px) {
