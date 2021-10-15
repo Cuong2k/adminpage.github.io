@@ -276,7 +276,7 @@
                 <!-- Content -->
                 <div class="content">
                     <!-- Seach -->
-                    <div class="seach row">
+                    <div class="seach">
                         <div class="input-group">
                             <div class="input-seach col-12 col-sm-6 col-md-5">
                                 <input class="form-control btn-sm" type="text" placeholder="Theo tên danh mục hoặc slug">
@@ -288,7 +288,7 @@
                                 </button>
                             </div>
                             <div class="btn-add col-2 col-sm-1 col-md-1">
-                                <a href="#">
+                                <a id="button-add" href="#">
                                     <i class="fa fa-plus" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -553,6 +553,9 @@
     })
     $("#button-seach").click(function(){
         $(".message").show(100);
+    })
+    $("#button-add").click(function(){
+        $(".message").hide(100);
     })
 
     $(".btn-show").click(function() {
