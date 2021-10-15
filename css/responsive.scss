@@ -1,0 +1,14 @@
+@media screen and (max-width: 990px) {
+    #slide-bar {
+        display: none;
+    }
+    .btn-show {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 577px) {
+    .btn-seach {
+        padding: 15px 0px 0px 0px !important;
+    }
+}

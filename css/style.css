@@ -1,0 +1,151 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+#slide-bar-hide {
+  height: 1000%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -240px; }
+
+.btn-show {
+  display: none;
+  color: black;
+  border: transparent;
+  border-radius: 5px;
+  margin-right: 5px;
+  width: 45px;
+  height: 45px;
+  line-height: 40px;
+  text-align: center; }
+
+.btn-hide {
+  background: none;
+  color: #d40000;
+  border: transparent;
+  border-radius: 5px;
+  margin-right: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center; }
+
+.rows {
+  display: flex; }
+
+#slide-bar, #slide-bar-hide {
+  background: #2F4050;
+  width: 240px;
+  padding: 0px !important; }
+  #slide-bar .top-slide-bar, #slide-bar-hide .top-slide-bar {
+    background: #233645; }
+    #slide-bar .top-slide-bar .box-logo, #slide-bar-hide .top-slide-bar .box-logo {
+      padding: 20px 5px 0px 5px; }
+      #slide-bar .top-slide-bar .box-logo img, #slide-bar-hide .top-slide-bar .box-logo img {
+        max-height: 60px;
+        box-shadow: 5px 5px 8px #272727; }
+    #slide-bar .top-slide-bar .accounts, #slide-bar-hide .top-slide-bar .accounts {
+      padding: 10px 7px 15px 5px; }
+      #slide-bar .top-slide-bar .accounts .username, #slide-bar-hide .top-slide-bar .accounts .username {
+        color: #D0A314; }
+        #slide-bar .top-slide-bar .accounts .username p, #slide-bar-hide .top-slide-bar .accounts .username p {
+          margin-right: 5px; }
+  #slide-bar .list-manager, #slide-bar-hide .list-manager {
+    border-bottom: 1px solid #233645; }
+    #slide-bar .list-manager .active, #slide-bar-hide .list-manager .active {
+      background: #293846; }
+    #slide-bar .list-manager .list-menu, #slide-bar-hide .list-manager .list-menu {
+      padding: 10px; }
+      #slide-bar .list-manager .list-menu :nth-child(n), #slide-bar-hide .list-manager .list-menu :nth-child(n) {
+        margin-right: 7px;
+        color: #A7B1C2; }
+      #slide-bar .list-manager .list-menu .item-list, #slide-bar-hide .list-manager .list-menu .item-list {
+        font-size: 14px;
+        text-decoration: none; }
+  #slide-bar #report, #slide-bar-hide #report {
+    padding: 10px;
+    border-bottom: 1px solid #233645; }
+    #slide-bar #report span, #slide-bar-hide #report span {
+      margin-right: 7px;
+      color: #A7B1C2; }
+    #slide-bar #report a, #slide-bar-hide #report a {
+      color: #A7B1C2;
+      text-decoration: none;
+      font-size: 14px; }
+
+#page {
+  padding: 0px;
+  background: #F7F8FC; }
+  #page .header {
+    background: #FFFF;
+    padding: 15px 15px; }
+    #page .header .title-header {
+      padding: 0px; }
+      #page .header .title-header h1 {
+        color: #7F8183;
+        font-size: 25px;
+        margin: 0px; }
+    #page .header .user-menu {
+      padding: 0px; }
+      #page .header .user-menu .action-menu {
+        display: block; }
+        #page .header .user-menu .action-menu .mini-images {
+          padding-right: 8px;
+          color: #007bff; }
+      #page .header .user-menu .role {
+        margin-top: 10px; }
+        #page .header .user-menu .role span {
+          font-weight: bold; }
+        #page .header .user-menu .role p {
+          display: inline; }
+  #page .content .seach {
+    margin: 0px;
+    padding: 15px 15px; }
+    #page .content .seach :nth-child(n) {
+      align-items: center; }
+    #page .content .seach .input-seach {
+      padding: 0px; }
+    #page .content .seach .btn-seach {
+      padding-left: 20px; }
+    #page .content .seach .btn-add {
+      padding: 0px; }
+      #page .content .seach .btn-add a {
+        float: right; }
+    #page .content .seach .message {
+      display: none;
+      padding: 10px 10px;
+      margin-top: 15px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ECECEC;
+      background: #EBFFDF; }
+      #page .content .seach .message span {
+        margin-right: 5px; }
+      #page .content .seach .message p {
+        display: inline;
+        margin: 0px; }
+  #page .content .table {
+    padding: 0px 15px; }
+    #page .content .table table {
+      background: #FFFF; }
+      #page .content .table table th {
+        padding: 7px !important; }
+        #page .content .table table th .show-more {
+          color: #7F8183;
+          background: #F8F9FA;
+          border-radius: 3px; }
+          #page .content .table table th .show-more .btn-show-more {
+            color: #9A9A9A;
+            width: 25px;
+            height: 25px;
+            text-align: center; }
+      #page .content .table table td {
+        padding: 7px !important; }
+      #page .content .table table .name-product {
+        color: #007bff; }
+  #page .content .Pagination {
+    padding-left: 15px; }
+
+/*# sourceMappingURL=style.css.map */
