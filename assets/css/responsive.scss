@@ -1,0 +1,24 @@
+@media screen and (max-width: 990px) {
+    #slide-bar {
+        display: none;
+    }
+    .btn-show {
+        display: inline-block;
+    }
+    .box-logo {
+        padding-top: 0px !important;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    #slide-bar-hide {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 577px) {
+    .btn-search {
+        padding: 15px 0px 0px 0px !important;
+    }
+}

@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://use.fontawesome.com/1aaf32be12.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <title>Trang quản trị</title>
 </head>
 <body>
@@ -23,55 +21,82 @@
                 <!-- logo and account -->
                 <div class="top-slide-bar">
                     <div class="box-logo" >
-                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e7a11f68306231.5b58520d159a3.gif" alt="">
+                        <img src="https://geeksontap.com.au/wp-content/uploads/2020/10/Google-Workspace-Animation.gif" alt="">
                     </div>
                     <div class="accounts d-flex justify-content-between">
-                            <div class="username d-flex">
-                                <p>Admin</p>
-                                <a href="#">
-                                    <span>
-                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                    </span>
+                        <div class="username d-flex">
+                            <p>Admin</p>
+                            <div class="btn-group show-more">
+                                <a class="btn-show-more" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
                                 </a>
-                                
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-repeat" aria-hidden="true"></i>
+                                        Đổi tài khoản
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                        Đăng xuất
+                                    </a>
+                                </div>
                             </div>
-                            <div class="btn-plus justify-content-end">
-                                <a href="#">
-                                    <span>
-                                        <i class="fa fa-plus-circle" aria-hidden="true"></i></i>
-                                    </span>
+                        </div>
+                        <div class="btn-plus justify-content-end btn-group show-more">
+                            <a class="btn-show-more" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-plus-circle" aria-hidden="true"></i></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-life-ring" aria-hidden="true"></i>
+                                    Hỗ trợ
                                 </a>
                             </div>
+                        </div>
                     </div>
                 </div>
                 <!-- list menu -->
                 <div class="list-manager ">
-                    <a class="list-menu" href="#">
+                    <a class="list-menu list-1" href="#">
                         <span>
-                            <i class="bi bi-tags-fill"></i>
+                            <i class="fa fa-tags" aria-hidden="true"></i>
                         </span>
                         <span class="item-list">Đơn vị hành chính</span>  
                         <span>
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
                         </span>
                     </a>
+                    <div class="hide-list-menu hide-list-1">
+                        <a class="list-menu" href="#">
+                            <span>
+                                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            </span>
+                            <span class="item-list" >Huyện - Tiếp nhận Hồ sơ</span>
+                        </a>
+                        <a class="list-menu" href="#">
+                            <span>
+                                <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                            </span>
+                            <span class="item-list">Huyện - Chấm điểm HS</span>
+                        </a>
+                    </div>
                     <a class="list-menu" href="#">
                         <span>
-                            <i class="bi bi-file-earmark"></i>
+                            <i class="fa fa-file-o" aria-hidden="true"></i>
                         </span>
                         <span class="item-list">Quản lý chủ thể</span>
                     </a>
                     <div class="list-menu active">
                         <span>
-                            <i class="bi bi-list-ul"></i>
+                            <i class="fa fa-th-list" aria-hidden="true"></i>
                         </span>
                         <span class="item-list">Bộ chỉ tiêu đánh giá</span>
                     </div>
                     <a class="list-menu" href="#">
                         <span>
-                            <i class="bi bi-tags-fill"></i>
+                            <i class="fa fa-tags" aria-hidden="true"></i>
                         </span>
-                        <span class="item-list" href="#">Quản lý hồ sơ OCO</span>
+                        <span class="item-list" href="#">Quản lý hồ sơ OCOP</span>
                     </a>
                 </div>
                 <!-- list menu -->
@@ -136,56 +161,83 @@
                             <button class="btn-hide float-right">
                                 <span><i class="fa fa-times" aria-hidden="true"></i></span>
                             </button>
-                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e7a11f68306231.5b58520d159a3.gif" alt="">
+                            <img src="https://geeksontap.com.au/wp-content/uploads/2020/10/Google-Workspace-Animation.gif" alt="">
                             
                         </div>
                         <div class="accounts d-flex justify-content-between">
-                                <div class="username d-flex">
-                                    <p>Admin</p>
-                                    <a href="#">
-                                        <span>
-                                            <i class="fa fa-caret-down" aria-hidden="true"></i>
-                                        </span>
+                            <div class="username d-flex">
+                                <p>Admin</p>
+                                <div class="btn-group show-more">
+                                    <a class="btn-show-more" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
                                     </a>
-                                    
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fa fa-repeat" aria-hidden="true"></i>
+                                            Đổi tài khoản
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                            Đăng xuất
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="btn-plus justify-content-end">
-                                    <a href="#">
-                                        <span>
-                                            <i class="fa fa-plus-circle" aria-hidden="true"></i></i>
-                                        </span>
+                            </div>
+                            <div class="btn-plus justify-content-end btn-group show-more">
+                                <a class="btn-show-more" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-plus-circle" aria-hidden="true"></i></i>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">
+                                        <i class="fa fa-life-ring" aria-hidden="true"></i>
+                                        Hỗ trợ
                                     </a>
                                 </div>
+                            </div>
                         </div>
                     </div>
                     <!-- list menu -->
                     <div class="list-manager ">
-                        <a class="list-menu" href="#">
+                        <a class="list-menu list-1" href="#">
                             <span>
-                                <i class="bi bi-tags-fill"></i>
+                                <i class="fa fa-tags" aria-hidden="true"></i>
                             </span>
                             <span class="item-list">Đơn vị hành chính</span>  
                             <span>
-                                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
                             </span>
                         </a>
+                        <div class="hide-list-menu hide-list-1">
+                            <a class="list-menu" href="#">
+                                <span>
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                </span>
+                                <span class="item-list" >Huyện - Tiếp nhận Hồ sơ</span>
+                            </a>
+                            <a class="list-menu" href="#">
+                                <span>
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                                </span>
+                                <span class="item-list">Huyện - Chấm điểm HS</span>
+                            </a>
+                        </div>
                         <a class="list-menu" href="#">
                             <span>
-                                <i class="bi bi-file-earmark"></i>
+                                <i class="fa fa-file-o" aria-hidden="true"></i>
                             </span>
                             <span class="item-list">Quản lý chủ thể</span>
                         </a>
                         <div class="list-menu active">
                             <span>
-                                <i class="bi bi-list-ul"></i>
+                                <i class="fa fa-th-list" aria-hidden="true"></i>
                             </span>
                             <span class="item-list">Bộ chỉ tiêu đánh giá</span>
                         </div>
                         <a class="list-menu" href="#">
                             <span>
-                                <i class="bi bi-tags-fill"></i>
+                                <i class="fa fa-tags" aria-hidden="true"></i>
                             </span>
-                            <span class="item-list" href="#">Quản lý hồ sơ OCO</span>
+                            <span class="item-list" href="#">Quản lý hồ sơ OCOP</span>
                         </a>
                     </div>
                     <!-- list menu -->
@@ -206,7 +258,7 @@
                             <span>
                                 <i class="fa fa-files-o" aria-hidden="true"></i>
                             </span>
-                            <span class="item-list">Huyện - Đánh giá COP</span>
+                            <span class="item-list">Huyện - Đánh giá OCOP</span>
                         </a>
                     </div>
                     <!-- list menu -->
@@ -271,16 +323,16 @@
                 </div>
                 <!-- Content -->
                 <div class="content">
-                    <!-- Seach -->
-                    <div class="seach">
+                    <!-- search -->
+                    <div class="search">
                         <div class="input-group">
-                            <div class="input-seach col-12 col-sm-6 col-md-5">
-                                <input id="input-seach" class="form-control btn-sm" type="text" placeholder="Theo tên danh mục hoặc slug">
+                            <div class="input-search col-12 col-sm-6 col-md-5">
+                                <input id="input-search" class="form-control btn-sm" type="text" placeholder="Theo tên danh mục hoặc slug">
                             </div>
-                            <div class="btn-seach col-10 col-sm-5 col-md-6">
-                                <button id="button-seach" type="button" class="btn btn-outline-primary btn-sm">
+                            <div class="btn-search col-10 col-sm-5 col-md-6">
+                                <button id="button-search" type="button" class="btn btn-outline-primary btn-sm">
                                 <i class="fa fa-search" aria-hidden="true"></i>
-                                Tìm em's
+                                Tìm kiếm
                                 </button>
                             </div>
                             <div class="btn-add col-2 col-sm-1 col-md-1">
@@ -293,7 +345,7 @@
                             <span>
                                 <i class="fa fa-check-circle-o" aria-hidden="true"></i>
                             </span>
-                            <p>Mỡ đấy mà húp 😈😈</p>
+                            <p>Tìm thấy 'x' kết quả</p>
                         </div>
                     </div>
                     <div class="table">
@@ -311,7 +363,7 @@
                                 <th scope="row">
                                     <div class="btn-group show-more">
                                         <a class="btn-show-more" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="bi bi-three-dots-vertical"></i>
+                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                         </a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">
@@ -337,7 +389,7 @@
                                 <th scope="row">
                                     <div class="btn-group show-more">
                                         <a class="btn-show-more" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="bi bi-three-dots-vertical"></i>
+                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                         </a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">
@@ -353,6 +405,7 @@
                                                 Xoá
                                             </a>
                                         </div>
+                                    </div>
                                 </th>
                                 <td class="name-product">2. Bộ sản phẩm: Thịt, trứng, sữa tươi</td>
                                 <td class="date-edit">02-10-2021 17:16</td>
@@ -362,7 +415,7 @@
                                 <th scope="row">
                                     <div class="btn-group show-more">
                                         <a class="btn-show-more" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="bi bi-three-dots-vertical"></i>
+                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                         </a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">
@@ -378,6 +431,7 @@
                                                 Xoá
                                             </a>
                                         </div>
+                                    </div>
                                 </th>
                                 <td class="name-product">3. Bộ sản phẩm: Gạo, ngũ cốc</td>
                                 <td class="date-edit">30-09-2021 17:37</td>
@@ -387,7 +441,7 @@
                                 <th scope="row">
                                     <div class="btn-group show-more">
                                         <a class="btn-show-more" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="bi bi-three-dots-vertical"></i>
+                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                         </a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">
@@ -403,6 +457,7 @@
                                                 Xoá
                                             </a>
                                         </div>
+                                    </div>
                                 </th>
                                 <td class="name-product">4. Bộ sản phẩm: Mật ong, các sản phẩm từ mật ong, mật khác</td>
                                 <td class="date-edit">01-10-2021 08:21</td>
@@ -412,7 +467,7 @@
                                 <th scope="row">
                                     <div class="btn-group show-more">
                                         <a class="btn-show-more" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="bi bi-three-dots-vertical"></i>
+                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                         </a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">
@@ -428,6 +483,7 @@
                                                 Xoá
                                             </a>
                                         </div>
+                                    </div> 
                                 </th>
                                 <td class="name-product">5. Bộ sản phẩm: Đồ ăn nhanh</td>
                                 <td class="date-edit">06-10-2021 10:53</td>
@@ -437,7 +493,7 @@
                                 <th scope="row">
                                     <div class="btn-group show-more">
                                         <a class="btn-show-more" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="bi bi-three-dots-vertical"></i>
+                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                         </a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">
@@ -453,6 +509,7 @@
                                                 Xoá
                                             </a>
                                         </div>
+                                    </div>
                                 </th>
                                 <td class="name-product">6. Bộ sản phẩm: Chế biến từ gạo, ngũ cốc</td>
                                 <td class="date-edit">29-09-2021 21:11</td>
@@ -462,7 +519,7 @@
                                 <th scope="row">
                                     <div class="btn-group show-more">
                                         <a class="btn-show-more" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="bi bi-three-dots-vertical"></i>
+                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                         </a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">
@@ -478,6 +535,7 @@
                                                 Xoá
                                             </a>
                                         </div>
+                                    </div>
                                 </th>
                                 <td class="name-product">7. Bộ sản phẩm: Chế biến từ rau, củ. quả, hạt</td>
                                 <td class="date-edit">01-10-2021 08:21</td>
@@ -487,7 +545,7 @@
                                 <th scope="row">
                                     <div class="btn-group show-more">
                                         <a class="btn-show-more" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="bi bi-three-dots-vertical"></i>
+                                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                         </a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="#">
@@ -503,6 +561,7 @@
                                                 Xoá
                                             </a>
                                         </div>
+                                    </div>
                                 </th>
                                 <td class="name-product">8. Bộ sản phẩm: Chế biến từ thịt, trứng, sữa</td>
                                 <td class="date-edit">01-10-2021 08:22</td>
@@ -549,19 +608,18 @@
         $(".slide-bar-hide").hide(500);
     });
 
-    $("#button-seach").click(function(){
-        if ($("#input-seach").val().trim() == "") {
-            $(".message").text("Nhập gì đi chứ");
-            $(".message").show(400);
+    $("#button-search").click(function(){
+        if (!$("#input-search").val().trim()) {
+            alert("Nhập vào ô tìm kiếm!");
+            $(".message").hide(200);
         }
         else {
-            $(".message").text("Làm gì có em " + $("#input-seach").val() + ". Mỡ đấy mà húp 😈😈");
             $(".message").show(400);
         }
     });
 
     $("#button-add").click(function(){
-        $("#input-seach").val("");
+        $("#input-search").val("");
         $(".message").hide(400);
     });
 
@@ -576,5 +634,9 @@
             left: "-240px"
         },300);
     });
+
+    $(".list-1").click(function() {
+        $(".hide-list-1").slideToggle(500);
+    })
 </script>
 </html>
